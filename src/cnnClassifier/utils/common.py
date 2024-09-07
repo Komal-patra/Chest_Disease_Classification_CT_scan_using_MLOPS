@@ -10,8 +10,10 @@ from pathlib import Path
 from typing import Any
 import base64
 
+
+
 @ensure_annotations
-def read_yaml(path_to_yaml: Path)-> ConfigBox:
+def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """reads yaml file and returns
 
     Args:
@@ -27,13 +29,15 @@ def read_yaml(path_to_yaml: Path)-> ConfigBox:
     try:
         with open(path_to_yaml) as yaml_file:
             content = yaml.safe_load(yaml_file)
-            logger.info(f"yaml file loaded successfully")
+            logger.info(f"yaml file: {path_to_yaml} loaded successfully")
             return ConfigBox(content)
     except BoxValueError:
-        raise ValueError("YAML file is empty")
+        raise ValueError("yaml file is empty")
     except Exception as e:
         raise e
     
+
+
 @ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
@@ -43,14 +47,11 @@ def create_directories(path_to_directories: list, verbose=True):
         ignore_log (bool, optional): ignore if multiple dirs is to be created. Defaults to False.
     """
     for path in path_to_directories:
-        try:
-            os.makedirs(path, exist_ok=True)
-            if verbose:
-                logger.info(f"Directory created: {path}")
-        except Exception as e:
-            logger.error(f"Error creating directory: {path}")
-            raise e
-        
+        os.makedirs(path, exist_ok=True)
+        if verbose:
+            logger.info(f"created directory at: {path}")
+
+
 @ensure_annotations
 def save_json(path: Path, data: dict):
     """save json data
