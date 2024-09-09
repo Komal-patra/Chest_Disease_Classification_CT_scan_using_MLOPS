@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Chest_Disease_Classification_CT_scan_using_MLOPS/mlruns/0/eb19440a963b4d9db7fc451f350e906e/artifacts
+end_time: 1725912083756
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb19440a963b4d9db7fc451f350e906e
+run_name: indecisive-lark-818
+run_uuid: eb19440a963b4d9db7fc451f350e906e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725912071526
+status: 3
+tags: []
+user_id: Administrator
