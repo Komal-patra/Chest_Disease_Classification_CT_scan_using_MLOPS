@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Chest_Disease_Classification_CT_scan_using_MLOPS/mlruns/0/e6af485cb0bb4177a9216fd4793eebba/artifacts
+end_time: 1725905396943
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e6af485cb0bb4177a9216fd4793eebba
+run_name: nebulous-owl-747
+run_uuid: e6af485cb0bb4177a9216fd4793eebba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725905384621
+status: 3
+tags: []
+user_id: Administrator
