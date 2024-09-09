@@ -5,7 +5,7 @@ conda activate cnn
 pip install -r requirements.txt
 
 # AWS Deployment
-ECR Repos: 250738637992.dkr.ecr.eu-west-1.amazonaws.com/chestxrayclassification
+ECR Repos: 250738637992.dkr.ecr.us-east-1.amazonaws.com/chestxrayclassification
 
 ### steps
 
